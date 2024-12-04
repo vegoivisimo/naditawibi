@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;  /* Alinea contenido al inicio */
+    min-height: 100vh;
+    overflow-y: scroll;  /* Permite desplazamiento vertical */
+}
+
+.album-container {
+    width: 100%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.photo-grid {
+    display: flex;
+    flex-direction: column;  /* Fotos apiladas verticalmente */
+    gap: 20px;
+}
+
+.photo-grid img {
+    width: 100%;          /* Ocupa todo el ancho */
+    height: auto;         /* Mantiene la proporción */
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
